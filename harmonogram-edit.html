@@ -1,0 +1,416 @@
+
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Enter Vision Adam Płotkowski">
+        <title>Enter Vision - harmonogram</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="" sizes="180x180">
+        <link rel="icon" href="" sizes="32x32" type="image/png">
+        <link rel="icon" href="" sizes="16x16" type="image/png">
+        <link rel="manifest" href="">
+        <link rel="mask-icon" href="">
+        <link rel="icon" href="">
+        <meta name="theme-color">
+        <link href="assets/style.css" rel="stylesheet">
+    </head>
+    <body id="schedule-edit">
+        <div class="d-flex">  
+            <div class="sidebar collapsed sidebar d-flex flex-column justify-content-between justify-content-lg-start" id="sidebar">
+                <div class="logo motion d-none d-lg-block"></div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <img class="nav-icon img-fluid motion" src="assets/img/multimedia-icon.svg">
+                            <div class="nav-menu-text motion">Multimedia</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <img class="nav-icon img-fluid motion" src="assets/img/playlist-icon.svg">
+                            <div class="nav-menu-text motion">Playlisty</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <img class="nav-icon img-fluid motion" src="assets/img/harmonogram-icon.svg">
+                            <div class="nav-menu-text motion">Harmonogramy</div>
+                        </a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#components-collapse"
+                           aria-expanded="true" aria-current="true">
+                            <img class="nav-icon img-fluid motion" src="assets/img/reklamacje-icon.svg">
+                            <div class="nav-menu-text motion">Reklamacje <img class="sub-menu-arrow"
+                                                                              src="assets/img/arrow-down.svg">
+                            </div>
+                        </a>
+                        <div class="collapse submenu-sidebar" id="components-collapse">
+                            <ul class="">
+                                <li><a href="" class="">Lorem</a></li>
+                                <li><a href="" class="">Ipsum</a></li>
+                                <li><a href="" class="">Dolor</a></li>
+                                <li><a href="" class="">Sit amet</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <img class="nav-icon img-fluid motion" src="assets/img/urzadzenia-icon.svg">
+                            <div class="nav-menu-text motion">Urządzenia</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <img class="nav-icon img-fluid motion" src="assets/img/ustawienia-icon.svg">
+                            <div class="nav-menu-text motion">Ustawienia</div>
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile-menu-bottom motion mt-auto row mx-0">
+                    <div class="d-flex d-lg-none align-items-center col-6 px-0" type="button">
+                        <div class="account-avatar">
+                            <img class="img-fluid" src="assets/img/avatar.svg">
+                        </div>
+                        <div class="account-name p-2">
+                            <strong>Moje konto</strong><br>
+                        </div>
+                    </div>
+                    <div class="logout col-6 px-0 d-flex align-items-center justify-content-end h-100">
+                        <span>wyloguj</span> <img class="img-fluid ms-2" src="assets/img/logout-icon.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="rightcolumn" class="content flex-grow-1">
+                <header class="">
+                    <div class="header-content d-flex justify-content-between align-items-center h-100">
+                        <div class="logo-mobile d-lg-none"><img class="img-fluid" src="assets/img/logo.svg"></div>
+                        <div class="d-none d-lg-flex align-items-center right-content order-lg-2 h-100">
+                            <div class="notifications">
+                                <img class="img-fluid" src="assets/img/notification-bell.svg">
+                            </div>
+                            <div class="language-dropdown d-flex align-items-center">
+                                <img class="img-fluid lang-flag" src="assets/img/pol-flag.svg"> polski
+                            </div>
+                            <div class="account d-flex flex-row align-items-center h-100">
+                                <div class="dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="account-name">
+                                        <strong>Grzegorz</strong><br>
+                                        Var Bogya de Csepy
+                                    </div>
+                                    <div class="account-avatar ms-2">
+                                        <img class="img-fluid" src="assets/img/avatar.svg">
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Moje Konto</a></li>
+                                    <li><a class="dropdown-item" href="#">Ustawienia</a></li>
+                                    <li><a class="dropdown-item" href="#">Wyloguj</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-menu-nav">
+                            <div class="header__hamburger toggle-btn" id="toggleButton" onclick="toggleSidebar()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+<!-- CONTENT -->
+
+                <div id="content" data-media_manager>
+                    <div class="container content-head">
+                        <div class="row">
+                            <div class="col-6 align-self-center">
+                                <div class="content-head-text">
+                                    Harmonogram > edycja
+                                </div>
+                            </div>
+                            <div class="col-6 text-end">
+                                <a href="#">
+                                    <button class="btn btn-blue">
+                                        Zapisz zmiany
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-xl-4 d-flex">
+                                <div class="schedule-info w-100">
+                                    <div class="d-flex align-items-center">
+                                        <input id="editableInput" type="text" class="form-control input-readonly" value="Nazwa harmonogramu" readonly>
+                                        <button id="editButton" class="btn btn-primary ms-2">Edytuj</button>
+                                    </div>
+                                    <div class="play-type mt-5">
+                                        <p class="choice-header">Rodzaj odtwarzania</p>
+                                        <div class="d-flex">
+                                            <div class="form-check me-5">
+                                                <input class="form-check-input" type="radio" name="play-type-radio" id="play-type-radio-1" checked>
+                                                <label class="form-check-label" for="play-type-radio-1">
+                                                    odtwarzanie w pętli
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="play-type-radio" id="play-type-radio-2">
+                                                <label class="form-check-label" for="play-type-radio-2">
+                                                    jednorazowe odtwarzanie
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="margin-hr">
+
+                                    <div class="">
+                                        <p class="choice-header">Okres obowiązywania </p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <label for="date-validity-period-from" class="form-label">od:</label>
+                                                <input type="date" id="date-validity-period-from" class="form-control">
+                                            </div>
+                                            <div class="d-flex align-items-center ms-4">
+                                                <label for="date-validity-period-to" class="form-label">do:</label>
+                                                <input type="date" id="date-validity-period-t" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="margin-hr">
+
+                                    <div class="">
+                                        <p class="choice-header">Powtarzaj w dni</p>
+                                        <form>
+                                            <div class="form-check mb-4 align-items-center">
+                                                <div class="me-4">
+                                                    <input class="form-check-input" type="radio" id="repeatAllDaysOption" name="repeatOption" value="allDays" checked>
+                                                    <label class="form-check-label" for="repeatAllDaysOption">
+                                                        Powtarzaj we wszystkie dni
+                                                    </label>
+                                                    <div id="allDaysTimeRange" class="mt-3">
+                                                        <div class="d-flex">
+                                                            <div class="repeat-hour-from d-flex align-items-center">
+                                                                <label for="allDaysFrom" class="form-label">od:</label>
+                                                                <input type="time" class="form-control time-control" id="allDaysFrom">
+                                                            </div>
+                                                            <div class="repeat-hour-to d-flex align-items-center ms-3">
+                                                                <label for="allDaysTo" class="form-label">do:</label>
+                                                                <input type="time" class="form-control time-control" id="allDaysTo">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3 mb-2">
+                                                    <input class="form-check-input" type="radio" id="selectDaysOption" name="repeatOption" value="selectDays">
+                                                    <label class="form-check-label" for="selectDaysOption">
+                                                        Wybierz poszczególne dni
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div id="daysSelection" style="display: none;">
+                                                <!-- Dni tygodnia z przedziałem godzinowym -->
+                                                <div class="form-check d-xl-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="monday" value="monday">
+                                                    <label class="form-check-label me-3" for="monday">
+                                                        Poniedziałek
+                                                    </label>
+                                                    <div class="time-range my-2" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="mondayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="mondayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="mondayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="mondayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check d-xl-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="tuesday" value="tuesday">
+                                                    <label class="form-check-label me-3" for="tuesday">
+                                                        Wtorek
+                                                    </label>
+                                                    <div class="time-range my-2" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="tuesdayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="tuesdayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="tuesdayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="tuesdayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="wednesday" value="wednesday">
+                                                    <label class="form-check-label me-3" for="wednesday">
+                                                        Środa
+                                                    </label>
+                                                    <div class="row g-3 time-range" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="wednesdayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="wednesdayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="wednesdayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="wednesdayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="thursday" value="thursday">
+                                                    <label class="form-check-label me-3" for="thursday">
+                                                        Czwartek
+                                                    </label>
+                                                    <div class="row g-3 time-range" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="thursdayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="thursdayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="thursdayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="thursdayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check d-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="friday" value="friday">
+                                                    <label class="form-check-label me-3" for="friday">
+                                                        Piątek
+                                                    </label>
+                                                    <div class="row g-3 time-range" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="fridayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="fridayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="fridayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="fridayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check mb-3 d-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="saturday" value="saturday">
+                                                    <label class="form-check-label me-3" for="saturday">
+                                                        Sobota
+                                                    </label>
+                                                    <div class="row g-3 time-range" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="saturdayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="saturdayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="saturdayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="saturdayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check mb-3 d-flex">
+                                                    <input class="form-check-input day-checkbox me-2" type="checkbox" id="sunday" value="sunday">
+                                                    <label class="form-check-label me-3" for="saturday">
+                                                        Niedziela
+                                                    </label>
+                                                    <div class="row g-3 time-range" style="display: none;">
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="sundayFrom" class="form-label">Od: </label>
+                                                            <input type="time" class="form-control" id="sundayFrom">
+                                                        </div>
+                                                        <div class="col d-flex align-items-center">
+                                                            <label for="sundayTo" class="form-label">Do: </label>
+                                                            <input type="time" class="form-control" id="sundayTo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <hr class="margin-hr">
+
+                                    <p class="mt-5 choice-header"><strong>Wyświetlaj w wybranych datach</strong></p>
+                                    <form id="dateTimeForm">
+                                        <div class="mb-3 row mx-0 px-0 g-3">
+                                            <div class="col-md-4">
+                                                <label for="date" class="form-label">Data:</label>
+                                                <input type="date" id="date" class="form-control">
+                                                <div id="dateError" class="error-message"></div>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <label for="timeFrom" class="form-label">Od:</label>
+                                                <input type="time" id="timeFrom" class="form-control">
+                                                <div id="timeFromError" class="error-message"></div>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <label for="timeTo" class="form-label">Do:</label>
+                                                <input type="time" id="timeTo" class="form-control">
+                                                <div id="timeToError" class="error-message"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" id="addDateTime" class="btn btn-primary">Dodaj</button>
+                                    </form>
+
+<!-- Tabela do wyświetlania wybranych dat i godzin -->
+                                    <table class="table mt-3 table-date">
+                                        <thead>
+                                            <tr>
+                                                <th>data</th>
+                                                <th>godzina od</th>
+                                                <th>godzina do</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dateTimeTableBody">
+<!-- dynamiczne wiersze -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-xl-4 ">
+                                <div class="content-final h-100">
+<!-- DRAG & DROP COL-1 -->								<div class="media-list">
+									<div data-media_source="./media.json"></div>
+								</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-xl-4">
+                                <div class="content-final h-100 destination-container">
+                                    <div class="" data-media_destination></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT -->
+            </div>
+        </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/scripts.js"></script>
+    <script>
+
+        $(function(){
+            $('#datepicker').datepicker();
+        });
+
+        $(function(){
+            $('#datepicker1').datepicker();
+        });
+
+    </script>
+
+    </body>
+</html>

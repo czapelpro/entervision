@@ -1,0 +1,20 @@
+{
+    "0": {
+        "id": 1,
+        "file": "Lorem ipsum nazwa pliku.mp4",
+        "thumbnail": "./assets/img/media-tmp.webp",
+        "duration": "00:30"
+    },
+    "1": {
+        "id": 2,
+        "file": "Lorem ipsum nazwa pliku.mp4",
+        "thumbnail": "./assets/img/media-tmp.webp",
+        "duration": "00:45"
+    },
+    "2": {
+        "id": 3,
+        "file": "Lorem ipsum nazwa pliku.mp4",
+        "thumbnail": "./assets/img/media-tmp.webp",
+        "duration": "01:00"
+    }
+}

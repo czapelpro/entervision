@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" width="100mm" height="66.7mm" version="1.1" viewBox="0 0 283.5 189">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dd0b15;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_23" data-name="Group 23">
+    <rect id="Rectangle_67" data-name="Rectangle 67" class="cls-2" width="283.5" height="94.5"/>
+    <rect id="Rectangle_68" data-name="Rectangle 68" class="cls-1" y="94.5" width="283.5" height="94.5"/>
+  </g>
+</svg>
